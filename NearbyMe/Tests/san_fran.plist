@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>lat</key>
+		<string>37.7799405</string>
+		<key>lon</key>
+		<string>-122.4076637</string>
+		<key>title</key>
+		<string>Rancho Parnassus Coffee</string>
+	</dict>
+
+  <!-- ... -->
+	<dict>
+		<key>lat</key>
+		<string>37.791651</string>
+		<key>lon</key>
+		<string>-122.4209962</string>
+		<key>title</key>
+		<string>Royal Ground Coffee</string>
+	</dict>
+	<dict>
+		<key>lat</key>
+		<string>37.7894321</string>
+		<key>lon</key>
+		<string>-122.4008567</string>
+		<key>title</key>
+		<string>Peet's Coffee and Tea</string>
+	</dict>
+	<dict>
+		<key>lat</key>
+		<string>37.7886901</string>
+		<key>lon</key>
+		<string>-122.4008757</string>
+		<key>title</key>
+		<string>Starbucks Coffee</string>
+	</dict>
+	<dict>
+		<key>lat</key>
+		<string>37.7910697</string>
+		<key>lon</key>
+		<string>-122.4192372</string>
+		<key>title</key>
+		<string>Contraband Coffee Bar</string>
+	</dict>
+	<dict>
+		<key>lat</key>
+		<string>37.7810244</string>
+		<key>lon</key>
+		<string>-122.3952293</string>
+		<key>title</key>
+		<string>HRD Coffee Shop</string>
+	</dict>
+	<dict>
+		<key>lat</key>
+		<string>37.7826879</string>
+		<key>lon</key>
+		<string>-122.4189416</string>
+		<key>title</key>
+		<string>Emile's Coffee &amp; Tea</string>
+	</dict>
+	<dict>
+		<key>lat</key>
+		<string>37.7769408</string>
+		<key>lon</key>
+		<string>-122.4082734</string>
+		<key>title</key>
+		<string>Sightglass Coffee</string>
+	</dict>
+	<dict>
+		<key>lat</key>
+		<string>37.7860559</string>
+		<key>lon</key>
+		<string>-122.4051519</string>
+		<key>title</key>
+		<string>The Coffee Bean &amp; Tea Leaf</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1807" systemVersion="12B19" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="SavedSearch" representedClassName="NBMSavedSearch">
+        <attribute name="lastUsedAt" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="text" attributeType="String" indexed="YES" syncable="YES"/>
+        <userInfo/>
+    </entity>
+    <elements>
+        <element name="SavedSearch" positionX="261" positionY="189" width="128" height="75"/>
+    </elements>
+</model>

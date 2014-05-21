@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB086BCA1544644900FAF88C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB086BC91544644900FAF88C /* UIKit.framework */; };
+		AB086BCC1544644900FAF88C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB086BCB1544644900FAF88C /* Foundation.framework */; };
+		AB086BCE1544644900FAF88C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB086BCD1544644900FAF88C /* CoreGraphics.framework */; };
+		AB086BD01544644900FAF88C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB086BCF1544644900FAF88C /* CoreData.framework */; };
+		AB086BD61544644900FAF88C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB086BD41544644900FAF88C /* InfoPlist.strings */; };
+		AB086BD81544644900FAF88C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB086BD71544644900FAF88C /* main.m */; };
+		AB086BDC1544644900FAF88C /* NBMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB086BDB1544644900FAF88C /* NBMAppDelegate.m */; };
+		AB086BE51544644900FAF88C /* NearbyMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB086BE31544644900FAF88C /* NearbyMe.xcdatamodeld */; };
+		AB086C101544647700FAF88C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB086C0E1544647700FAF88C /* MainStoryboard_iPhone.storyboard */; };
+		AB086C111544647700FAF88C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB086C0F1544647700FAF88C /* MainStoryboard_iPad.storyboard */; };
+		AB086C181544649500FAF88C /* NBMSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB086C131544649500FAF88C /* NBMSearchViewController.m */; };
+		AB086C191544649500FAF88C /* NBMMapResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB086C151544649500FAF88C /* NBMMapResultsViewController.m */; };
+		AB086C1A1544649500FAF88C /* NBMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB086C171544649500FAF88C /* NBMLocationManager.m */; };
+		AB086C26154464A500FAF88C /* OpenStreetMapService.m in Sources */ = {isa = PBXBuildFile; fileRef = AB086C1C154464A500FAF88C /* OpenStreetMapService.m */; };
+		AB086C27154464A500FAF88C /* NBMPointOfInterest.m in Sources */ = {isa = PBXBuildFile; fileRef = AB086C1E154464A500FAF88C /* NBMPointOfInterest.m */; };
+		AB086C28154464A500FAF88C /* NSString+NearbyMe.m in Sources */ = {isa = PBXBuildFile; fileRef = AB086C21154464A500FAF88C /* NSString+NearbyMe.m */; };
+		AB086C29154464A500FAF88C /* NSDictionary+NearbyMe.m in Sources */ = {isa = PBXBuildFile; fileRef = AB086C23154464A500FAF88C /* NSDictionary+NearbyMe.m */; };
+		AB086C2C154464DF00FAF88C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB086C2B154464DF00FAF88C /* MapKit.framework */; };
+		AB086C2E154464E200FAF88C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB086C2D154464E200FAF88C /* CoreLocation.framework */; };
+		AB145E1F16C2DA7A00555863 /* NBMTestDataFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AB145E1E16C2DA7A00555863 /* NBMTestDataFactory.m */; };
+		AB3D57D4160170C40016D56C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB3D57D3160170C40016D56C /* Default-568h@2x.png */; };
+		AB57F77515BB5D4200D331E8 /* NBMPointsOfInterestService.m in Sources */ = {isa = PBXBuildFile; fileRef = AB57F77415BB5D4200D331E8 /* NBMPointsOfInterestService.m */; };
+		AB713254154C7BBB00814FAD /* NBMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = AB713253154C7BBB00814FAD /* NBMDocument.m */; };
+		AB752ECA16012C8F00466DCE /* NBMIpadDetailsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB752EC916012C8F00466DCE /* NBMIpadDetailsNavigationController.m */; };
+		AB97B50816D03D9E00404113 /* NBMPointsOfInterestServiceStub.m in Sources */ = {isa = PBXBuildFile; fileRef = AB97B50716D03D9E00404113 /* NBMPointsOfInterestServiceStub.m */; };
+		ABA3E70115E1EE3E0000F605 /* NBMResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA3E70015E1EE3E0000F605 /* NBMResultsViewController.m */; };
+		ABA3E70715E1F2A20000F605 /* NBMListResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA3E70615E1F2A20000F605 /* NBMListResultsViewController.m */; };
+		ABA9259A16C42B3100103977 /* NBMTestSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA9259916C42B3100103977 /* NBMTestSetup.m */; };
+		ABB3583715BBB935002B8889 /* NBMAccessibleAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB3583615BBB935002B8889 /* NBMAccessibleAnnotationView.m */; };
+		ABBABFFD16D2832300B3543F /* san_fran.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABBABFFC16D2832300B3543F /* san_fran.plist */; };
+		ABDBBB3415EFCCF20089EE27 /* NBMSavedSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDBBB3315EFCCF20089EE27 /* NBMSavedSearch.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB086BC51544644900FAF88C /* NearbyMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearbyMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB086BC91544644900FAF88C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AB086BCB1544644900FAF88C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB086BCD1544644900FAF88C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AB086BCF1544644900FAF88C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AB086BD31544644900FAF88C /* NearbyMe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NearbyMe-Info.plist"; sourceTree = "<group>"; };
+		AB086BD51544644900FAF88C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB086BD71544644900FAF88C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB086BD91544644900FAF88C /* NearbyMe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NearbyMe-Prefix.pch"; sourceTree = "<group>"; };
+		AB086BDA1544644900FAF88C /* NBMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBMAppDelegate.h; sourceTree = "<group>"; };
+		AB086BDB1544644900FAF88C /* NBMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBMAppDelegate.m; sourceTree = "<group>"; };
+		AB086BE41544644900FAF88C /* NearbyMe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NearbyMe.xcdatamodel; sourceTree = "<group>"; };
+		AB086C0E1544647700FAF88C /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		AB086C0F1544647700FAF88C /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		AB086C121544649500FAF88C /* NBMSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMSearchViewController.h; sourceTree = "<group>"; };
+		AB086C131544649500FAF88C /* NBMSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMSearchViewController.m; sourceTree = "<group>"; };
+		AB086C141544649500FAF88C /* NBMMapResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMMapResultsViewController.h; sourceTree = "<group>"; };
+		AB086C151544649500FAF88C /* NBMMapResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMMapResultsViewController.m; sourceTree = "<group>"; };
+		AB086C161544649500FAF88C /* NBMLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMLocationManager.h; sourceTree = "<group>"; };
+		AB086C171544649500FAF88C /* NBMLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMLocationManager.m; sourceTree = "<group>"; };
+		AB086C1B154464A500FAF88C /* OpenStreetMapService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenStreetMapService.h; sourceTree = "<group>"; };
+		AB086C1C154464A500FAF88C /* OpenStreetMapService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenStreetMapService.m; sourceTree = "<group>"; };
+		AB086C1D154464A500FAF88C /* NBMPointOfInterest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMPointOfInterest.h; sourceTree = "<group>"; };
+		AB086C1E154464A500FAF88C /* NBMPointOfInterest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMPointOfInterest.m; sourceTree = "<group>"; };
+		AB086C1F154464A500FAF88C /* NBMLocationHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMLocationHelpers.h; sourceTree = "<group>"; };
+		AB086C20154464A500FAF88C /* NSString+NearbyMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NearbyMe.h"; sourceTree = "<group>"; };
+		AB086C21154464A500FAF88C /* NSString+NearbyMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NearbyMe.m"; sourceTree = "<group>"; };
+		AB086C22154464A500FAF88C /* NSDictionary+NearbyMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NearbyMe.h"; sourceTree = "<group>"; };
+		AB086C23154464A500FAF88C /* NSDictionary+NearbyMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NearbyMe.m"; sourceTree = "<group>"; };
+		AB086C2B154464DF00FAF88C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AB086C2D154464E200FAF88C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AB145E1D16C2DA7A00555863 /* NBMTestDataFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMTestDataFactory.h; sourceTree = "<group>"; };
+		AB145E1E16C2DA7A00555863 /* NBMTestDataFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMTestDataFactory.m; sourceTree = "<group>"; };
+		AB3D57D3160170C40016D56C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AB57F77315BB5D4200D331E8 /* NBMPointsOfInterestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMPointsOfInterestService.h; sourceTree = "<group>"; };
+		AB57F77415BB5D4200D331E8 /* NBMPointsOfInterestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMPointsOfInterestService.m; sourceTree = "<group>"; };
+		AB713252154C7BBB00814FAD /* NBMDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMDocument.h; sourceTree = "<group>"; };
+		AB713253154C7BBB00814FAD /* NBMDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMDocument.m; sourceTree = "<group>"; };
+		AB752EC816012C8E00466DCE /* NBMIpadDetailsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMIpadDetailsNavigationController.h; sourceTree = "<group>"; };
+		AB752EC916012C8F00466DCE /* NBMIpadDetailsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMIpadDetailsNavigationController.m; sourceTree = "<group>"; };
+		AB8880E516C2C748004846F9 /* SortTestData.xcappdata */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SortTestData.xcappdata; sourceTree = "<group>"; };
+		AB97B50616D03D9E00404113 /* NBMPointsOfInterestServiceStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMPointsOfInterestServiceStub.h; sourceTree = "<group>"; };
+		AB97B50716D03D9E00404113 /* NBMPointsOfInterestServiceStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMPointsOfInterestServiceStub.m; sourceTree = "<group>"; };
+		ABA3E6FF15E1EE3E0000F605 /* NBMResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMResultsViewController.h; sourceTree = "<group>"; };
+		ABA3E70015E1EE3E0000F605 /* NBMResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMResultsViewController.m; sourceTree = "<group>"; };
+		ABA3E70515E1F2A20000F605 /* NBMListResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMListResultsViewController.h; sourceTree = "<group>"; };
+		ABA3E70615E1F2A20000F605 /* NBMListResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMListResultsViewController.m; sourceTree = "<group>"; };
+		ABA9259816C42B3100103977 /* NBMTestSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMTestSetup.h; sourceTree = "<group>"; };
+		ABA9259916C42B3100103977 /* NBMTestSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMTestSetup.m; sourceTree = "<group>"; };
+		ABAF9D1516CED77E00074960 /* Akron, OH.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Akron, OH.gpx"; sourceTree = "<group>"; };
+		ABB3583515BBB935002B8889 /* NBMAccessibleAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMAccessibleAnnotationView.h; sourceTree = "<group>"; };
+		ABB3583615BBB935002B8889 /* NBMAccessibleAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMAccessibleAnnotationView.m; sourceTree = "<group>"; };
+		ABBABFFC16D2832300B3543F /* san_fran.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = san_fran.plist; sourceTree = "<group>"; };
+		ABDBBB3215EFCCF20089EE27 /* NBMSavedSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBMSavedSearch.h; sourceTree = "<group>"; };
+		ABDBBB3315EFCCF20089EE27 /* NBMSavedSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBMSavedSearch.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB086BC21544644900FAF88C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB086C2E154464E200FAF88C /* CoreLocation.framework in Frameworks */,
+				AB086C2C154464DF00FAF88C /* MapKit.framework in Frameworks */,
+				AB086BCA1544644900FAF88C /* UIKit.framework in Frameworks */,
+				AB086BCC1544644900FAF88C /* Foundation.framework in Frameworks */,
+				AB086BCE1544644900FAF88C /* CoreGraphics.framework in Frameworks */,
+				AB086BD01544644900FAF88C /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB086BBA1544644900FAF88C = {
+			isa = PBXGroup;
+			children = (
+				AB086BD11544644900FAF88C /* NearbyMe */,
+				AB086BC81544644900FAF88C /* Frameworks */,
+				AB086BC61544644900FAF88C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB086BC61544644900FAF88C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB086BC51544644900FAF88C /* NearbyMe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB086BC81544644900FAF88C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB086C2D154464E200FAF88C /* CoreLocation.framework */,
+				AB086C2B154464DF00FAF88C /* MapKit.framework */,
+				AB086BC91544644900FAF88C /* UIKit.framework */,
+				AB086BCB1544644900FAF88C /* Foundation.framework */,
+				AB086BCD1544644900FAF88C /* CoreGraphics.framework */,
+				AB086BCF1544644900FAF88C /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB086BD11544644900FAF88C /* NearbyMe */ = {
+			isa = PBXGroup;
+			children = (
+				AB8880E416C2C6E8004846F9 /* Tests */,
+				AB086C0E1544647700FAF88C /* MainStoryboard_iPhone.storyboard */,
+				AB086C0F1544647700FAF88C /* MainStoryboard_iPad.storyboard */,
+				AB086BDA1544644900FAF88C /* NBMAppDelegate.h */,
+				AB086BDB1544644900FAF88C /* NBMAppDelegate.m */,
+				AB713252154C7BBB00814FAD /* NBMDocument.h */,
+				AB713253154C7BBB00814FAD /* NBMDocument.m */,
+				ABDBBB3215EFCCF20089EE27 /* NBMSavedSearch.h */,
+				ABDBBB3315EFCCF20089EE27 /* NBMSavedSearch.m */,
+				AB086C121544649500FAF88C /* NBMSearchViewController.h */,
+				AB086C131544649500FAF88C /* NBMSearchViewController.m */,
+				AB086C141544649500FAF88C /* NBMMapResultsViewController.h */,
+				AB086C151544649500FAF88C /* NBMMapResultsViewController.m */,
+				ABA3E70515E1F2A20000F605 /* NBMListResultsViewController.h */,
+				ABA3E70615E1F2A20000F605 /* NBMListResultsViewController.m */,
+				ABA3E6FF15E1EE3E0000F605 /* NBMResultsViewController.h */,
+				ABA3E70015E1EE3E0000F605 /* NBMResultsViewController.m */,
+				AB752EC816012C8E00466DCE /* NBMIpadDetailsNavigationController.h */,
+				AB752EC916012C8F00466DCE /* NBMIpadDetailsNavigationController.m */,
+				AB086C161544649500FAF88C /* NBMLocationManager.h */,
+				AB086C171544649500FAF88C /* NBMLocationManager.m */,
+				AB086C1B154464A500FAF88C /* OpenStreetMapService.h */,
+				AB086C1C154464A500FAF88C /* OpenStreetMapService.m */,
+				AB086C1D154464A500FAF88C /* NBMPointOfInterest.h */,
+				AB086C1E154464A500FAF88C /* NBMPointOfInterest.m */,
+				AB57F77315BB5D4200D331E8 /* NBMPointsOfInterestService.h */,
+				AB57F77415BB5D4200D331E8 /* NBMPointsOfInterestService.m */,
+				AB086C1F154464A500FAF88C /* NBMLocationHelpers.h */,
+				AB086C20154464A500FAF88C /* NSString+NearbyMe.h */,
+				AB086C21154464A500FAF88C /* NSString+NearbyMe.m */,
+				AB086C22154464A500FAF88C /* NSDictionary+NearbyMe.h */,
+				AB086C23154464A500FAF88C /* NSDictionary+NearbyMe.m */,
+				ABB3583515BBB935002B8889 /* NBMAccessibleAnnotationView.h */,
+				ABB3583615BBB935002B8889 /* NBMAccessibleAnnotationView.m */,
+				AB086BE31544644900FAF88C /* NearbyMe.xcdatamodeld */,
+				AB086BD21544644900FAF88C /* Supporting Files */,
+			);
+			path = NearbyMe;
+			sourceTree = "<group>";
+		};
+		AB086BD21544644900FAF88C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB3D57D3160170C40016D56C /* Default-568h@2x.png */,
+				AB086BD31544644900FAF88C /* NearbyMe-Info.plist */,
+				AB086BD41544644900FAF88C /* InfoPlist.strings */,
+				AB086BD71544644900FAF88C /* main.m */,
+				AB086BD91544644900FAF88C /* NearbyMe-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB8880E416C2C6E8004846F9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				ABBABFFC16D2832300B3543F /* san_fran.plist */,
+				AB8880E516C2C748004846F9 /* SortTestData.xcappdata */,
+				AB145E1D16C2DA7A00555863 /* NBMTestDataFactory.h */,
+				AB145E1E16C2DA7A00555863 /* NBMTestDataFactory.m */,
+				ABA9259816C42B3100103977 /* NBMTestSetup.h */,
+				ABA9259916C42B3100103977 /* NBMTestSetup.m */,
+				AB97B50616D03D9E00404113 /* NBMPointsOfInterestServiceStub.h */,
+				AB97B50716D03D9E00404113 /* NBMPointsOfInterestServiceStub.m */,
+				ABAF9D1516CED77E00074960 /* Akron, OH.gpx */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB086BC41544644900FAF88C /* NearbyMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB086C041544644900FAF88C /* Build configuration list for PBXNativeTarget "NearbyMe" */;
+			buildPhases = (
+				AB086BC11544644900FAF88C /* Sources */,
+				AB086BC21544644900FAF88C /* Frameworks */,
+				AB086BC31544644900FAF88C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NearbyMe;
+			productName = NearbyMe;
+			productReference = AB086BC51544644900FAF88C /* NearbyMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB086BBC1544644900FAF88C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NBM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Pragmatic Programmers";
+			};
+			buildConfigurationList = AB086BBF1544644900FAF88C /* Build configuration list for PBXProject "NearbyMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AB086BBA1544644900FAF88C;
+			productRefGroup = AB086BC61544644900FAF88C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB086BC41544644900FAF88C /* NearbyMe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB086BC31544644900FAF88C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB086BD61544644900FAF88C /* InfoPlist.strings in Resources */,
+				AB086C101544647700FAF88C /* MainStoryboard_iPhone.storyboard in Resources */,
+				AB086C111544647700FAF88C /* MainStoryboard_iPad.storyboard in Resources */,
+				AB3D57D4160170C40016D56C /* Default-568h@2x.png in Resources */,
+				ABBABFFD16D2832300B3543F /* san_fran.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB086BC11544644900FAF88C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB086BD81544644900FAF88C /* main.m in Sources */,
+				AB086BDC1544644900FAF88C /* NBMAppDelegate.m in Sources */,
+				AB086BE51544644900FAF88C /* NearbyMe.xcdatamodeld in Sources */,
+				AB086C181544649500FAF88C /* NBMSearchViewController.m in Sources */,
+				AB086C191544649500FAF88C /* NBMMapResultsViewController.m in Sources */,
+				AB086C1A1544649500FAF88C /* NBMLocationManager.m in Sources */,
+				AB086C26154464A500FAF88C /* OpenStreetMapService.m in Sources */,
+				AB086C27154464A500FAF88C /* NBMPointOfInterest.m in Sources */,
+				AB086C28154464A500FAF88C /* NSString+NearbyMe.m in Sources */,
+				AB086C29154464A500FAF88C /* NSDictionary+NearbyMe.m in Sources */,
+				AB713254154C7BBB00814FAD /* NBMDocument.m in Sources */,
+				AB57F77515BB5D4200D331E8 /* NBMPointsOfInterestService.m in Sources */,
+				ABB3583715BBB935002B8889 /* NBMAccessibleAnnotationView.m in Sources */,
+				ABA3E70115E1EE3E0000F605 /* NBMResultsViewController.m in Sources */,
+				ABA3E70715E1F2A20000F605 /* NBMListResultsViewController.m in Sources */,
+				ABDBBB3415EFCCF20089EE27 /* NBMSavedSearch.m in Sources */,
+				AB752ECA16012C8F00466DCE /* NBMIpadDetailsNavigationController.m in Sources */,
+				AB145E1F16C2DA7A00555863 /* NBMTestDataFactory.m in Sources */,
+				ABA9259A16C42B3100103977 /* NBMTestSetup.m in Sources */,
+				AB97B50816D03D9E00404113 /* NBMPointsOfInterestServiceStub.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AB086BD41544644900FAF88C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB086BD51544644900FAF88C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB086C021544644900FAF88C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB086C031544644900FAF88C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB086C051544644900FAF88C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NearbyMe/NearbyMe-Prefix.pch";
+				INFOPLIST_FILE = "NearbyMe/NearbyMe-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AB086C061544644900FAF88C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NearbyMe/NearbyMe-Prefix.pch";
+				INFOPLIST_FILE = "NearbyMe/NearbyMe-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB086BBF1544644900FAF88C /* Build configuration list for PBXProject "NearbyMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB086C021544644900FAF88C /* Debug */,
+				AB086C031544644900FAF88C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AB086C041544644900FAF88C /* Build configuration list for PBXNativeTarget "NearbyMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB086C051544644900FAF88C /* Debug */,
+				AB086C061544644900FAF88C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AB086BE31544644900FAF88C /* NearbyMe.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AB086BE41544644900FAF88C /* NearbyMe.xcdatamodel */,
+			);
+			currentVersion = AB086BE41544644900FAF88C /* NearbyMe.xcdatamodel */;
+			path = NearbyMe.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AB086BBC1544644900FAF88C /* Project object */;
+}
